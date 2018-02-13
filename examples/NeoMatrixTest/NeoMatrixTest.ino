@@ -1,40 +1,21 @@
 #include <PICxel.h>
 #include <NeoMatrix.h>
 
-PICxel strip(60, 0, GRB);
-NeoMatrix tft(strip, 8, 7);
+// 56 LEDs on pin 0.
+// Must be running in GRB mode.
+PICxel strip(56, 0, GRB);
 
-USBFS usbDevice;
-USBManager USB(usbDevice, 0xf055, 0x1234);
-CDCACM uSerial;
+// 56 LEDs can be arranged as 8x7, and wiring
+// is easiest in Zig-Zag mode.
+NeoMatrix tft(strip, 8, 7, NeoMatrix::ZIGZAG);
 
 void setup() {
-	USB.addDevice(uSerial);
-	USB.begin();
-	strip.begin();
-
+	tft.initializeDevice();
+	tft.fillScreen(Color::Black);
 }
 
 void loop() {
-    for (int m = 59; m >= 0; m--) {
-        for (int s = 0; s < m; s++) {
-            strip.GRBsetLEDColor(s, 0, 0, 255);
-            strip.refreshLEDs();
-            delay(10);
-            strip.GRBsetLEDColor(s, 0, 0, 0);
-        }
-        strip.GRBsetLEDColor(m, 0, 255, 0);
-    }
-    strip.refreshLEDs();
-
-    delay(1000);
-
-    for (int c = 255; c > 0; c--) {
-        for (int i = 0; i < 60; i++) {
-            strip.GRBsetLEDColor(i, c, 0, 0);
-        }
-        strip.refreshLEDs();
-        delay(10);
-    }
-    delay(2000);
+	tft.setCursor(0, 0);
+	tft.print(millis() / 1000);
+	delay(100);
 }
