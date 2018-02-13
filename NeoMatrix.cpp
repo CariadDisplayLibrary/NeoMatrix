@@ -2,6 +2,16 @@
 
 void NeoMatrix::setPixel(int x, int y, color_t color) {
     int pixNumber = 0;
+
+    if (_xflip) x = getWidth() - x - 1;
+    if (_yflip) y = getHeight() - y - 1;
+
+    if (_rot) {
+        int z = x;
+        x = y;
+        y = z;
+    }
+
     if (_mode == LINEAR) {
         pixNumber = x + (y * _height);
     } else if (_mode == ZIGZAG) {
@@ -60,3 +70,13 @@ void NeoMatrix::endBuffer() {
         _strip->refreshLEDs();
     }
 }
+
+int NeoMatrix::getWidth() {
+    return _rot ? _height : _width;
+}
+
+int NeoMatrix::getHeight() {
+    return _rot ? _width : _height;
+}
+
+
