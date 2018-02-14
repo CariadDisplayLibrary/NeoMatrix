@@ -13,7 +13,7 @@ void NeoMatrix::setPixel(int x, int y, color_t color) {
     }
 
     if (_mode == LINEAR) {
-        pixNumber = x + (y * _height);
+        pixNumber = x + (y * _width);
     } else if (_mode == ZIGZAG) {
         if (y & 1) { // Odd row - reversed
             pixNumber = y * _width + (_width - x - 1);
