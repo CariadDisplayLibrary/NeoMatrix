@@ -55,7 +55,7 @@ void NeoMatrix::displayOn() {
 void NeoMatrix::displayOff() {
 }
 
-void NeoMatrix::invertDisplay(boolean i) {
+void NeoMatrix::invertDisplay(bool i) {
     _inverted = i;
 }
 

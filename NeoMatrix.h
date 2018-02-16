@@ -27,7 +27,7 @@ class NeoMatrix : public DisplayCore {
         void initializeDevice();
         void displayOn();
         void displayOff();
-        void invertDisplay(boolean i);
+        void invertDisplay(bool i);
         void startBuffer();
         void endBuffer();
 
