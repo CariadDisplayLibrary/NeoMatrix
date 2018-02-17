@@ -12,6 +12,11 @@ void NeoMatrix::setPixel(int x, int y, color_t color) {
         y = z;
     }
 
+    if (x >= _width) return;
+    if (x < 0) return;
+    if (y >= _height) return;
+    if (y < 0) return;
+
     if (_mode == LINEAR) {
         pixNumber = x + (y * _width);
     } else if (_mode == ZIGZAG) {
