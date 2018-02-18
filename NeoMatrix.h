@@ -23,6 +23,7 @@ class NeoMatrix : public DisplayCore {
         NeoMatrix(PICxel *strip, int w, int h, uint8_t mode = LINEAR) : _strip(strip), _width(w), _height(h), _mode(mode), _buffer(0), _inverted(false), _xflip(false), _yflip(false), _rot(false) {}
 
         void setPixel(int x, int y, color_t color);
+        void setPixel(int x, int y, uint8_t r, uint8_t g, uint8_t b);
         void setRotation(int rotation);
         void initializeDevice();
         void displayOn();

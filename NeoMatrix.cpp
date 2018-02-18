@@ -1,6 +1,14 @@
 #include <NeoMatrix.h>
 
 void NeoMatrix::setPixel(int x, int y, color_t color) {
+    uint8_t red = color >> 11;
+    uint8_t green = color >> 5 & 0b111111;
+    uint8_t blue = color & 0b11111;
+
+    setPixel(x, y, red, green, blue);
+}
+
+void NeoMatrix::setPixel(int x, int y, uint8_t red, uint8_t green, uint8_t blue) {
     int pixNumber = 0;
 
     if (_xflip) x = getWidth() - x - 1;
@@ -27,14 +35,6 @@ void NeoMatrix::setPixel(int x, int y, color_t color) {
         }
     }
 
-    uint8_t red = color >> 11;
-    uint8_t green = color >> 5 & 0b111111;
-    uint8_t blue = color & 0b11111;
-
-    red = red << 3;
-    green = green << 2;
-    blue = blue << 3;
-
     if (_inverted) {
         red = 255 - red;
         green = 255 - green;
@@ -46,6 +46,7 @@ void NeoMatrix::setPixel(int x, int y, color_t color) {
         _strip->refreshLEDs();
     }
 }
+
 
 void NeoMatrix::setRotation(int rotation) {
 }
