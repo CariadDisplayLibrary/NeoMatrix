@@ -1,0 +1,3 @@
+NeoMatrix.cpp libraries/DisplayCore/NeoMatrix
+NeoMatrix.h libraries/DisplayCore/NeoMatrix
+examples/ libraries/DisplayCore/NeoMatrix

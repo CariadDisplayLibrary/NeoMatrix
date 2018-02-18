@@ -1,0 +1,66 @@
+libdisplaycore-driver-neomatrix (2.1.0) uecide; urgency=low
+
+  * Switched examples to use 24 bit setPixel
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sun, 18 Feb 2018 21:30:07 +0000
+
+libdisplaycore-driver-neomatrix (2.0.9) uecide; urgency=low
+
+  * Added 24-bit setPixel
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sun, 18 Feb 2018 21:27:34 +0000
+
+libdisplaycore-driver-neomatrix (2.0.8) uecide; urgency=low
+
+  * Added examples
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sun, 18 Feb 2018 19:47:26 +0000
+
+libdisplaycore-driver-neomatrix (2.0.7) uecide; urgency=low
+
+  * Clipped setPixel properly
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sat, 17 Feb 2018 15:37:12 +0000
+
+libdisplaycore-driver-neomatrix (2.0.6) uecide; urgency=low
+
+  * Merge branch 'master' of github.com:DisplayCore/NeoMatrix
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Sat, 17 Feb 2018 15:35:31 +0000
+
+libdisplaycore-driver-neomatrix (2.0.5) uecide; urgency=low
+
+  * Renamed boolean to bool
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Fri, 16 Feb 2018 20:05:15 +0000
+
+libdisplaycore-driver-neomatrix (2.0.4) uecide; urgency=low
+
+  * Update NeoMatrix.cpp
+
+ -- Majenko Technologies <matt@majenko.co.uk>  Wed, 14 Feb 2018 20:21:01 +0000
+
+libdisplaycore-driver-neomatrix (2.0.3) uecide; urgency=low
+
+  * Added flip and rotate functions to align the display with your pixel arrangement
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 13 Feb 2018 21:35:47 +0000
+
+libdisplaycore-driver-neomatrix (2.0.2) uecide; urgency=low
+
+  * Put correct example in... :(
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 13 Feb 2018 20:22:26 +0000
+
+libdisplaycore-driver-neomatrix (2.0.1) uecide; urgency=low
+
+  * Fixed zigzag offset
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Fri, 9 Feb 2018 21:41:40 +0000
+
+libdisplaycore-driver-neomatrix (2.0.0) uecide; urgency=low
+
+  * Initial Import
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Fri, 9 Feb 2018 21:04:11 +0000
+
