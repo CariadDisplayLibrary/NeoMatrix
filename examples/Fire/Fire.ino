@@ -42,17 +42,11 @@ void loop() {
 
     for (int y = 0; y < h-1; y++) {
         for (int x = 0; x < w; x++) {
-            tft.setPixel(x, y, val2col(fire[y][x]));
+            tft.setPixel(x, y, fire[y][x], 0, 0);
         }
     }
 
     tft.endBuffer();
 
     delay(100);
-}
-
-color_t val2col(int v) {
-    v <<= 1;
-    if (v < 256) return rgb(v, 0, 0);
-    return rgb(255, v - 256, 0);
 }

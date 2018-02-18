@@ -54,7 +54,7 @@ void loop() {
             int b = DEPTH * (1.0/(d2*d2));
             if (b > DEPTH) b = DEPTH;
             
-            tft.setPixel(x, y, rgb(r, g, b));
+            tft.setPixel(x, y, r, g, b);
         }
     }
 
