@@ -12,7 +12,7 @@ XBSC-Group: DisplayCore
 XBSC-Subgroup: Drivers
 Depends: libdisplaycore-core, libpicxel
 Provides: NeoMatrix.h
-Description: WS2812B LED Display Driver
+Description: WS2812B LED
 
 
 
