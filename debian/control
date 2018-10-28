@@ -6,13 +6,13 @@ Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
 Package: libdisplaycore-driver-neomatrix
-Section: main
 Architecture: all
 XBSC-Group: DisplayCore
 XBSC-Subgroup: Drivers
+XBSC-Subsubgroup: LED
 Depends: libdisplaycore-core, libpicxel
 Provides: NeoMatrix.h
-Description: WS2812B LED
+Description: WS2812B
 
 
 
