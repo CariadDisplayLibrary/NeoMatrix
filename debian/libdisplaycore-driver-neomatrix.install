@@ -1,3 +1,5 @@
-NeoMatrix.cpp libraries/DisplayCore/NeoMatrix
-NeoMatrix.h libraries/DisplayCore/NeoMatrix
-examples/ libraries/DisplayCore/NeoMatrix
+examples libraries/DisplayCore/NeoMatrix
+library.json libraries/DisplayCore/NeoMatrix
+library.properties libraries/DisplayCore/NeoMatrix
+README.md libraries/DisplayCore/NeoMatrix
+src libraries/DisplayCore/NeoMatrix
