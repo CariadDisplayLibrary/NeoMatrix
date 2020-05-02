@@ -2,11 +2,11 @@
 #define _NEOMATRIX_H
 
 #include <Arduino.h>
-#include <DisplayCore.h>
+#include <Cariad.h>
 #include <PICxel.h>
 
 
-class NeoMatrix : public DisplayCore {
+class NeoMatrix : public Cariad {
     private:
         PICxel *_strip;
         int _width;

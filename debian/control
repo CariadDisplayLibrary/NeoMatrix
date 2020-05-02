@@ -1,16 +1,17 @@
-Source: libdisplaycore-driver-neomatrix
+Source: libcariad-driver-neomatrix
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-driver-neomatrix
+Package: libcariad-driver-neomatrix
+Replaces: libdisplaycore-driver-neomatrix
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Drivers
 XBSC-Subsubgroup: LED
-Depends: libdisplaycore-core, libpicxel
+Depends: libcariad-core, libpicxel
 Provides: NeoMatrix.h
 Description: WS2812B
 
