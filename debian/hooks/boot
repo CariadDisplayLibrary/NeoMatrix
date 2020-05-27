@@ -69,5 +69,5 @@ if (file_exists("uecide.json")) {
 }
 
 if ($do) {
-    system("mk15 -c Display");
+    system("mk15 -c Display -u https://github.com/CariadDisplayLibrary");
 }
